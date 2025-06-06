@@ -1,0 +1,14 @@
+# To prevent GPU memory leak when compute MONAI hausdorff distance and ASD
+# https://github.com/Project-MONAI/MONAI/issues/7480
+# https://github.com/PengchengShi1220/cbDice/issues/2#issuecomment-2231073354
+cupy-cuda12x
+cucim-cu12
+accelerate
+transformers
+monai
+pandas
+tensorboard
+torchmetrics
+matplotlib
+tqdm
+ftfy
