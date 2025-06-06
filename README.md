@@ -1,6 +1,12 @@
-# NextGen-UIA [[arXiv](https://arxiv.org/abs/)]
+# NextGen-UIA
 
-Adapting Vision-Language Foundation Model for Next Generation Medical Ultrasound Image Analysis
+[[Paper](https://arxiv.org/abs/)] [[Dataset](https://github.com/jinggqu/NextGen-UIA/releases)] 
+
+## Results
+
+![Segmentation Visualization](segmentation-viz.png)
+
+Visualization of the proposed method and SOTAs on LN-1, LN-2, BUSI, DDTI, TN3K, and microUS datasets. The first and second columns show the original images and ground truth masks, respectively. Regions in red, green and yellow indicate the ground truth, false positive and true positive, respectively.
 
 ## Requirements
 
@@ -16,40 +22,42 @@ The pre-trained CLIP model and variants should be placed in the current `ckpt` d
 
 The datasets should be placed in the upper-level directory `data`, the overall folder structure should look like this:
 
-```bash
-source-code
-├── ckpt
-├── models
-├── scripts
-├── requirements.txt
-└── ...
-
-data
-└── NextGen-UIA
-    ├── all
-    │   ├── images
-    │   └── masks
-    ├── classification
-    │   ├── BUSI
-    │   │   ├── test.txt
-    │   │   ├── train.txt
-    │   │   └── val.txt
-    │   ├── LN-1
-    │   └── LN-2
-    ├── finetune
-    │   ├── images
-    │   ├── us_caption_train_qwen3_8b.jsonl
-    │   └── us_caption_val_qwen3_8b.jsonl
-    └── segmentation
-        ├── BUSI
-        ├── DDTI
-        ├── LN-1
-        ├── LN-2
-        ├── TN3K
-        └── microUS
+```
+root-folder
+├── source-code
+│   ├── ckpt
+│   ├── models
+│   ├── scripts
+│   ├── requirements.txt
+│   └── ...
+└── data
+    └── NextGen-UIA
+        ├── all
+        │   ├── images
+        │   └── masks
+        ├── classification
+        │   ├── BUSI
+        │   │   ├── test.txt
+        │   │   ├── train.txt
+        │   │   └── val.txt
+        │   ├── LN-1
+        │   └── LN-2
+        ├── finetune
+        │   ├── images
+        │   ├── us_caption_train_qwen3_8b.jsonl
+        │   └── us_caption_val_qwen3_8b.jsonl
+        └── segmentation
+            ├── BUSI
+            ├── DDTI
+            ├── LN-1
+            ├── LN-2
+            ├── TN3K
+            └── microUS
 ```
 
-Due to collaboration agreement, we cannot provide the two lymph node datasets (LN-1 and LN-2). Other datasets are available in the [Releases](https://github.com/jinggqu/NextGen-UIA/releases) of this repository.
+Due to collaboration agreement, we cannot provide the two lymph node datasets (LN-1 and LN-2) currently. We're actively working to make these two datasets available to the public. Please stay tuned for more updates.
+
+Other datasets are available in the [Releases](https://github.com/jinggqu/NextGen-UIA/releases) of this repository.
 
 ## Training and Evaluation
 
