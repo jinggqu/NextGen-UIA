@@ -1,6 +1,6 @@
 # NextGen-UIA
 
-[[Paper](https://arxiv.org/abs/)] [[Dataset](https://github.com/jinggqu/NextGen-UIA/releases)] 
+[[Paper](https://arxiv.org/abs/)] [[Datasets](https://github.com/jinggqu/NextGen-UIA/releases)] 
 
 ## Results
 
@@ -52,7 +52,7 @@ root-folder
             ├── LN-1
             ├── LN-2
             ├── TN3K
-            └── microUS
+            └── Prostate
 ```
 
 Due to collaboration agreement, we cannot provide the two lymph node datasets (LN-1 and LN-2) currently. We're actively working to make these two datasets available to the public. Please stay tuned for more updates.
