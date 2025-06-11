@@ -22,7 +22,7 @@ mkdir -p logs
     python clip_seg.py --caption_type refined --finetuned_weights ckpt/clip_mona_finetune_refined.pth --dataset BUSI
     python clip_seg.py --caption_type refined --finetuned_weights ckpt/clip_mona_finetune_refined.pth --dataset DDTI
     python clip_seg.py --caption_type refined --finetuned_weights ckpt/clip_mona_finetune_refined.pth --dataset TN3K
-    python clip_seg.py --caption_type refined --finetuned_weights ckpt/clip_mona_finetune_refined.pth --dataset microUS
+    python clip_seg.py --caption_type refined --finetuned_weights ckpt/clip_mona_finetune_refined.pth --dataset Prostate
 
     # CLIP (Mona)
     python clip_seg.py --dataset LN-1
@@ -32,7 +32,7 @@ mkdir -p logs
     python clip_seg.py --dataset BUSI
     python clip_seg.py --dataset DDTI
     python clip_seg.py --dataset TN3K
-    python clip_seg.py --dataset microUS
+    python clip_seg.py --dataset Prostate
 
     # ========== Supervised Classification ==========
     # CLIP (Mona, fine-tuned)

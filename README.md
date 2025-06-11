@@ -1,12 +1,12 @@
 # NextGen-UIA
 
-[[Paper](https://arxiv.org/abs/)] [[Datasets](https://github.com/jinggqu/NextGen-UIA/releases)] 
+[[Paper](https://arxiv.org/abs/2506.08849)] [[Datasets](https://github.com/jinggqu/NextGen-UIA/releases)] 
 
 ## Results
 
 ![Segmentation Visualization](segmentation-viz.png)
 
-Visualization of the proposed method and SOTAs on LN-1, LN-2, BUSI, DDTI, TN3K, and microUS datasets. The first and second columns show the original images and ground truth masks, respectively. Regions in red, green and yellow indicate the ground truth, false positive and true positive, respectively.
+Visualization of the proposed method and SOTAs on LN-1, LN-2, BUSI, DDTI, TN3K, and Prostate datasets. The first and second columns show the original images and ground truth masks, respectively. Regions in red, green and yellow indicate the ground truth, false positive and true positive, respectively.
 
 ## Requirements
 
@@ -117,7 +117,15 @@ python clip_cls.py --dataset LN-1
 If you find this project helpful, please consider citing:
 
 ```bibtex
-
+@misc{qu2025adapting,
+      title={Adapting Vision-Language Foundation Model for Next Generation Medical Ultrasound Image Analysis}, 
+      author={Jingguo Qu and Xinyang Han and Tonghuan Xiao and Jia Ai and Juan Wu and Tong Zhao and Jing Qin and Ann Dorothy King and Winnie Chiu-Wing Chu and Jing Cai and Michael Tin-Cheung Ying},
+      year={2025},
+      eprint={2506.08849},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.08849}, 
+}
 ```
 
 ## Acknowledgements

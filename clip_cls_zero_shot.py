@@ -21,7 +21,7 @@ LESION_TYPES = [
 LN_PROMPT = torch.cat(
     [
         clip.tokenize(
-            f"""Benign: Oval shape, preserved echogenic hilum, thin homogeneous cortex. Malignant: Round, lost hilum, thickened/heterogeneous cortex, microcalcifications, irregular margins.The abnormality in this lymph node scan is {c}."""
+            f"""Benign: Oval shape, preserved echogenic hilum, thin homogeneous cortex. Malignant: Round, absent hilum, thickened/heterogeneous cortex, microcalcifications, irregular margins.The abnormality in this lymph node scan is {c}."""
         )
         for c in LESION_TYPES
     ]
@@ -30,7 +30,7 @@ LN_PROMPT = torch.cat(
 BUSI_PROMPT = torch.cat(
     [
         clip.tokenize(
-            f"""Benign: Oval shape, smooth margins, parallel orientation, homogeneous hypoechoic echotexture, posterior enhancement. Malignant: Irregular shape, spiculated margins, non-parallel orientation, heterogeneous hypoechoic echotexture, microcalcifications, posterior shadowing. The abnormality in this breast scan is {c}."""
+            f"""Benign: Oval shape, smooth margins, parallel orientation, homogeneous hypoechoic echotexture, posterior enhancement. Malignant: Irregular shape, spiculated margins, non-parallel orientation, heterogeneous hypoechoic echotexture, microcalcifications, posterior acoustic shadowing. The abnormality in this breast scan is {c}."""
         )
         for c in LESION_TYPES
     ]
