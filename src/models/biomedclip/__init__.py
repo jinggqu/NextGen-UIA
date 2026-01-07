@@ -1,0 +1,2 @@
+"""BiomedCLIP model implementations"""
+

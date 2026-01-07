@@ -1,0 +1,2 @@
+"""CLIPSeg segmentation model implementations"""
+

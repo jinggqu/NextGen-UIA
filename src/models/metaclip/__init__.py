@@ -1,0 +1,2 @@
+"""MetaCLIP model implementations"""
+
