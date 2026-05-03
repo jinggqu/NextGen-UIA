@@ -1,6 +1,6 @@
 # NextGen-UIA
 
-[[Paper](https://arxiv.org/abs/2506.08849)] [[Datasets](https://github.com/jinggqu/NextGen-UIA/releases)]
+[[Elsevier](https://www.sciencedirect.com/science/article/pii/S0957417426014739)] [[arXiv](https://arxiv.org/abs/2506.08849)] [[Datasets](https://github.com/jinggqu/NextGen-UIA/releases)]
 
 ## Overview
 
